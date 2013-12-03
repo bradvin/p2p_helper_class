@@ -1,6 +1,8 @@
 <?php
 /**
- * Register Post2Post Relationships
+ * @TODO: Change the below values to something more appropriate
+ *
+ * Register Post2Post Relationships For My First Plugin
  *
  * @package   My_First_Plugin
  * @author    Brad Vincent <bradvin@gmail.com>
@@ -11,6 +13,9 @@
 
 define('P2P_REQUIRED_VERSION', '1.6.2');
 
+/*
+ * @TODO : rename the class from 'myfirstplugin_post_relationships' to something more appropriate to your plugin
+ */
 if ( !class_exists( 'myfirstplugin_post_relationships' ) ) {
 
 	class myfirstplugin_post_relationships {
@@ -42,6 +47,8 @@ if ( !class_exists( 'myfirstplugin_post_relationships' ) ) {
 		}
 
 		public function register_connections() {
+
+			//@TODO: Edit these connections to be more specific to your plugin
 
 			p2p_register_connection_type( array(
 				'name' => 'posts_to_pages',
